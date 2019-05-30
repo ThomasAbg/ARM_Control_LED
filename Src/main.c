@@ -18,7 +18,7 @@
   */
 /* USER CODE END Header */
 MODULE_LICENSE("GPL");	// licence général public
-MODULE_AUTHOR("Thomas Abgrall");
+MODULE_AUTHOR("Thomas Abgrall, Devaux Axel, Venier Antoine");
 MODULE_DESCRIPTION("Control led pin STM32F407VG-DISCOVERY"); 
 MODULE_VERSION("Version 1.00"); 
 /* Includes ------------------------------------------------------------------*/
@@ -479,7 +479,6 @@ void afficherEtatLEDs(){
 	else
 		HAL_UART_Transmit(&huart2, (uint8_t*) "FF\n\r", 5, 10);
 	HAL_UART_Transmit(&huart2, (uint8_t*) "------------\n", 14, 10);
-	
 }
 
 /* USER CODE END 4 */
